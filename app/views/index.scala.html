@@ -9,7 +9,7 @@
  * argument is a `String` with the title of the page, the second
  * argument is an `Html` object containing the body of the page.
  *@
-@main("Artist application") {
+@main("FindArt") {
 
     <!-- Navbar -->
     <nav class="navbar navbar-default">
@@ -96,15 +96,15 @@
 
         <!-- Third Container (Grid) -->
     <div class="container-fluid bg-3 text-center">
-        <h3 class="margin"></h3><br>
         <div class="row">
             <div class="col-sm-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="/faq"><img src=@routes.Assets.versioned("images/FAQ.png") style="width:25%" alt="Image" align="center"></a>
+                <p>Useful information for artist and consumers.</p>
+
             </div>
             <div class="col-sm-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="/policies" align="center"><img src=@routes.Assets.versioned("images/policies.png")  style="width:25%" alt="Image"></a>
+                <p>See the terms and conditions of use of this service.</p>
             </div>
         </div>
     </div>

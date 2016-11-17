@@ -14,4 +14,18 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET     /signin                     controllers.SigninController.signin
 
+GET     /signup                     controllers.SignupController.signUp
+
+GET     /faq                        controllers.FAQController.faq
+
+GET     /policies                   controllers.PoliciesController.policies
+
+GET     /createArtist               controllers.CreateProfileArtistController.createProfileArtist
+
+GET     /createClient               controllers.CreateProfileClientController.createProfileClient
+
+GET     /artist                     controllers.MArtistController.mainScreenArtist
+
+GET     /client                     controllers.MClientController.mainScreenClient
+
 
