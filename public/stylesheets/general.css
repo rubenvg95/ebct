@@ -7208,4 +7208,13 @@ button.close {
     }
 }
 
+#map {
+    height: 300px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+
 /*# sourceMappingURL=bootstrap.min.css.map */
