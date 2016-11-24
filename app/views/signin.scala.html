@@ -34,8 +34,16 @@
 
         <!-- Third Container (Grid) -->
     <div class="container-fluid bg-3 text-center">
-        <h3 class="margin">Where To Find Me?</h3><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3 class="margin">Sign in for free</h3><br>
+        <form id="formulario" action="/createProfileClient" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="radio" name="typePerson" value="artist" checked>Artist
+            <input type="radio" name="typePerson" value="client">Client<br>
+            <input class="btn btn-default btn-lg" type="submit" value="Submit">
+        </form>
     </div>
 
         <!-- Footer -->
