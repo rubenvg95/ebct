@@ -1,14 +1,13 @@
 @*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
+* This template takes a single argument, a String containing a
+* message to display.
+*@
 @(message: String)
-
 @*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
+* Call the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
 @main("FindArt") {
 
     <<!-- Navbar -->
@@ -20,7 +19,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src=@routes.Assets.versioned("images/logo.png") class="img-responsive margin" style="width:25%"></a>
+                <a class="navbar-brand" href="/"><img src=@routes.Assets.versioned("images/logo.png") class="img-responsive margin
+                    " style="width:25%"></a>
             </div>
             </br>
             </br>
@@ -36,7 +36,39 @@
         <!-- Second Container -->
     <div class="container-fluid bg-2 text-center">
         <h3 class="margin">Policies</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="margin">What Information Do We Collect?</h3>
+                <p class="text-justify">
+                    You have two different options, artist or client. It depends on your needs and skills.
+                    In case you just need to hire an artist, you should choose client.
+                    On the other hand, if you want to earn money showing up your amazing cleverness you have to create the account as an artist.</p>
+                <br>
+                <h3 class="margin">What Do We Use Your Information For??</h3>
+                <p class="text-justify">
+                    Any of the information we collect from you may be used in one of the following ways:
+                    To personalize your experience; your information helps us to better respond to your individual needs.
+                    To improve our website; we continually strive to improve our website offerings based on the information and feedback we receive from you.
+                    To improve customer service; your information helps us to more effectively respond to your customer service requests and support needs. </p>
+                <br>
+                <h3 class="margin">How Do We Protect Your Information?</h3>
+                <p class="text-justify">We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information.</p>          </div>
+            <div class="col-sm-6">
+                <h3 class="margin">Do We Disclose Any Information To Outside Parties?</h3>
+                <p class="text-justify">We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.</p>
+                <br>
+                <br>
+                <br>
+                <h3 class="margin">Your Consent</h3>
+                <p class="text-justify">By using our site, you consent to our Privacy Policy.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="margin">Changes To Our Privacy Policy</h3>
+                <p class="text-justify">If we decide to change our privacy policy, we will post those changes on this page.</p>
+            </div>
+        </div>
     </div>
 
         <!-- Footer -->

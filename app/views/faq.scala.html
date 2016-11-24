@@ -1,14 +1,13 @@
 @*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
+* This template takes a single argument, a String containing a
+* message to display.
+*@
 @(message: String)
-
 @*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
+* Call the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
 @main("FindArt") {
 
     <!-- Navbar -->
@@ -20,7 +19,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src=@routes.Assets.versioned("images/logo.png") class="img-responsive margin" style="width:25%"></a>
+                <a class="navbar-brand" href="/"><img src=@routes.Assets.versioned("images/logo.png") class="img-responsive margin
+                    " style="width:25%"></a>
             </div>
             </br>
             </br>
@@ -35,14 +35,34 @@
 
         <!-- Container -->
     <div class="container-fluid bg-2 text-center">
+        <h3 class="margin">FAQ</h3>
         <div class="row">
             <div class="col-sm-6">
-                <h3 class="margin">Artist</h3>
-                <p>Blablablablablablabla</p>
+                <h3 class="margin">How can I get a quote?</h3>
+                <p class="text-justify">
+                    You have two different options, artist or client. It depends on your needs and skills.
+                    In case you just need to hire an artist, you should choose client.
+                    On the other hand, if you want to earn money showing up your amazing cleverness you have to create the account as an artist.</p>
+                <br>
+                <h3 class="margin">How much will it cost to commission an artist?</h3>
+                <p class="text-justify">
+                    Artists charge according to how the event is going to be, rather than a specific hourly rate. Therefore, the fee to commission work for the time and the duration of the performance. </p>
+                <br>
+                <h3 class="margin">How do I pay for the work?</h3>
+                <p class="text-justify">We take 50% of the full charge when the client hire the artist (when he confirm his order) and 50% at the end of the final artwork. You should pay by credit card or debit card.</p>
             </div>
             <div class="col-sm-6">
-                <h3 class="margin">Clients</h3>
-                <p>Blablablablablablabla</p>
+                <h3 class="margin">What happen as a client If cancel at the last moment a performance?</h3>
+                <p class="text-justify">It is going to be charge a fee for the performance that has been cancelled, it  will be different, depending on the artist. </p>
+                <br>
+                <br>
+                <h3 class="margin">How long it will take?</h3>
+                <p class="text-justify">The duration of performance depend on the customer needs. At least 1 hour and a half up to 4 hours. It should be based on the demand of the artist.</p>
+                <br>
+                <br>
+                <h3 class="margin">What does the artist need to know from me?</h3>
+                <p class="text-justify">As a client you should fill the profile in order to know a little bit more about your interests.
+                    So we can suggest different type of artist based on your preferences.</p>
             </div>
         </div>
     </div>

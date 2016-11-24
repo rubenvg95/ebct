@@ -22,8 +22,8 @@
                 </button>
                 <a class="navbar-brand" href="/"><img src=@routes.Assets.versioned("images/logo.png") class="img-responsive margin" style="width:25%"></a>
             </div>
-            </br>
-            </br>
+            <br>
+            <br>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/signup">SIGN UP</a></li>
@@ -32,16 +32,45 @@
         </div>
     </nav>
 
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+            $(function() {
+
+                if (localStorage.chkbx && localStorage.chkbx != '') {
+                    $('#remember_me').attr('checked', 'checked');
+                    $('#username').val(localStorage.usrname);
+                    $('#pass').val(localStorage.pass);
+                } else {
+                    $('#remember_me').removeAttr('checked');
+                    $('#username').val('');
+                    $('#pass').val('');
+                }
+
+                $('#remember_me').click(function() {
+
+                    if ($('#remember_me').is(':checked')) {
+                        // save username and password
+                        localStorage.usrname = $('#username').val();
+                        localStorage.pass = $('#pass').val();
+                        localStorage.chkbx = $('#remember_me').val();
+                    } else {
+                        localStorage.usrname = '';
+                        localStorage.pass = '';
+                        localStorage.chkbx = '';
+                    }
+                });
+            });
+
+    </script>
         <!-- Third Container (Grid) -->
     <div class="container-fluid bg-3 text-center">
         <h3 class="margin">Sign in for free</h3><br>
         <form id="formulario" action="/createProfileClient" method="post">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email"><br>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password"><br>
+            <p><input type="email" id="username" name="email" placeholder="Email"></p>
+            <p><input type="password" id="pass" name="password" placeholder="Password"></p>
             <input type="radio" name="typePerson" value="artist" checked>Artist
             <input type="radio" name="typePerson" value="client">Client<br>
+            <p><input type="checkbox" id="remember_me" value="checkbox">Remember me?</p>
             <input class="btn btn-default btn-lg" type="submit" value="Submit">
         </form>
     </div>
